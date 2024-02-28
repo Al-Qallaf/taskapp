@@ -44,4 +44,4 @@ set :assets_manifests, -> {
   [release_path.join("public", fetch(:assets_prefix), '.manifest.json')]
 }
 
-set :assets_prefix, 'packs'
+Rake::Task["deploy:assets:backup_manifest"].clear_actions

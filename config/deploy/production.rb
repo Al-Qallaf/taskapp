@@ -47,6 +47,11 @@ server "52.49.200.107", user: "ubuntu", roles: %w{app db web}
 #    auth_methods: %w(password)
 #  }
 #
+set :ssh_options, {
+    keys: %w(/home/ali/ccetAWSIrlandRails.pem),
+    #forward_agent: false,
+    #auth_methods: %w(password)
+  }
 # The server-based syntax can be used to override options:
 # ------------------------------------
 # server "example.com",

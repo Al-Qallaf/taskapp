@@ -6,7 +6,7 @@ require "capistrano/rails"
 require "capistrano/rbenv"
 require "capistrano/passenger"
 
-set :rbenv_type. :user
+set :rbenv_type, :user
 set :rbenv_ruby, "3.3.0"
 # Include default deployment tasks
 

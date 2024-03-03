@@ -1,11 +1,13 @@
 # Load DSL and set up stages
 require "capistrano/setup"
 require "capistrano/deploy"
-
-require "capistrano/rbenv"
+require "capistrano/bundler"
 require "capistrano/rails"
+require "capistrano/rbenv"
 require "capistrano/passenger"
 
+set :rbenv_type. :user
+set :rbenv_ruby, "3.3.0"
 # Include default deployment tasks
 
 

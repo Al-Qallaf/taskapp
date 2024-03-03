@@ -3,7 +3,9 @@ lock "~> 3.18.0"
 
 set :application, "taskapp"
 set :repo_url, "git@github.com:Al-Qallaf/taskapp.git"
-set :deploy_to, "~/#{fetch :application}"
+#set :deploy_to, "~/#{fetch :application}"
+set :deploy_to, '/home/ubuntu/taskapp'
+
 set :branch, "main"
 
 set :linked_files, %w{config/database.yml config/master.key}
